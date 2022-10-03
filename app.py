@@ -92,20 +92,20 @@ def stats(start=None, end=None):
         results = session.query(*sel).\
             filter(Measurement.date >= start).all()
         temps = list(np.ravel(results))
-        return jsonify(temps=temps)
-
-        results = session.query(*sel).\
-        filter(Measurement.date >= start).\
-        filter(Measurement.date <= end).all()
-        temps = list(np.ravel(results))
         return jsonify(temps)
 
-# if __name__ == '__main__':
-#    app.run()
+    results = session.query(*sel).\
+        filter(Measurement.date >= start).\
+        filter(Measurement.date <= end).all()
+    temps = list(np.ravel(results))
+    return jsonify(temps=temps)
+
+if __name__ == '__main__':
+   app.run()
 
 # Added code below to zsh
 # set FLASK_APP = app
 
-if __name__ == '__main__':
-    app.debug = True
-    app.run()
+# if __name__ == '__main__':
+#     app.debug = True
+#     app.run()
