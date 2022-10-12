@@ -19,6 +19,8 @@ The image below is a print out of the june_temp_list is a pre-view version of da
 
 
 The image below is of the summary statistics
+
+
 ![image](https://user-images.githubusercontent.com/100005305/195218362-f3d90e37-b7fa-46cb-9431-7646b9ab8f2a.png)
 
 Deliverable 2: Determine the Summary Statistics for December
